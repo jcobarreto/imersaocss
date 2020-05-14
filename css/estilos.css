@@ -48,11 +48,6 @@ header {
   top: 0px;
 }
   
-  /*.menu ul {
-    display: flex;
-    justify-content: space-around;
-  }*/
-
 .menu li {
   list-style: none;
 }
@@ -96,8 +91,8 @@ header {
 }
   
 .site-title {
-  font-size: 4em;
-  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  font-family: 'Special Elite', cursive;
 }
 
 .site-subtitle {
