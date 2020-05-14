@@ -64,12 +64,29 @@ header {
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;    
+  text-decoration: none;
 }
   
 .menu a:hover {
   background-color: white;
   color: black;
+}
+
+.titulo {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: 1s linear 1s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+    from {
+        transform: scale(0.2) translateY(50vh);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
 }
 
 .site-subtitle,
@@ -89,11 +106,13 @@ header {
   line-height: 1.8em;
 }
 
+.contato,
 .portfolio {    
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+.contato h2,
 .portfolio h2 {
   font-family: 'Oswald', sans-serif;
   color: black;
@@ -129,5 +148,26 @@ header {
   height: 180px;
   width: 240px;
   object-fit: cover;
-  object-position: left bottom;
+  object-position: left bottom;  
+  transition: transform 500ms;
+}
+
+.img-portfolio:hover {
+    transform: scale(1.08);
+}
+
+.contato .icons {
+    text-align: center;
+}
+
+.contato a {
+    color: black;
+    font-size: 2.5em;
+    transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255,255,255,0);
 }
